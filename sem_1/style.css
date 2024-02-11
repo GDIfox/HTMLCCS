@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    
+
+}
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -23,7 +29,7 @@ a {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
-    background: #2F2E41;
+    background: #5a5892;
     display: flex;
     gap: 32px;
 }
@@ -58,12 +64,22 @@ a {
 }
 
 .about {
+    /* background: rgba(242, 242, 242, 0.34);
+    padding-top: 64px;
+    padding-bottom: 194px; */
     background: rgba(242, 242, 242, 0.34);
     padding-top: 64px;
     padding-bottom: 194px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
 }
 
 .heading {
+    width: 578px;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
@@ -83,14 +99,47 @@ a {
 }
 
 .about__text {
-    width: 500px;
+    
+    /* width: 500px; */
+    width: 100%;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 18px;
     line-height: 30px;
     color: #7D7987;
     mix-blend-mode: normal;
+    line-height: 1.5;
     
+}
+/* tablet */
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+    .about_content {
+        justify-content: center;
+        gap: 32px;
+    }
+    .heading {
+        text-align: center;
+    }
+    
+}
+/* mobilka */
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-left: 16px;
+    }
+    .title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+    .header {
+        justify-content: center;
+    }
 }
 
 /* .content {
